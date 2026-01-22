@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Santhiya | Portfolio</title>
-
+  <title>Santhiya Theanraj | Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,12 +11,13 @@
   <!-- Header -->
   <header class="header">
     <h1>Santhiya Theanraj</h1>
-    <p>Data Engineer | Machine Learning Engineer</p>
+    <p>Data Engineer | Machine Learning & Graph ML Researcher</p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#volunteer">Volunteer</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -26,7 +26,12 @@
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      I am a data engineer and machine learning enthusiast with experience building scalable data pipelines, developing business intelligence reports, and creating datasets to support advanced analytics and ML models. At work, I have designed and maintained dynamic reports using SAP WebI, Power BI, Incorta, and Excel Power Query. Academically, I have built regression, graph-based, and LLM-powered models, including extracting entities from Reddit to create public datasets. I enjoy combining data engineering, analytics, and machine learning to deliver actionable insights and efficient solutions.
+      I am a data engineer with 9+ years of industry experience and a graduate student in
+      Computational Data Science at Temple University. My background includes building
+      large-scale ETL pipelines, data warehouses, and BI solutions using SAP BODS,
+      Informatica, SSIS, and cloud platforms. My current academic and research work
+      focuses on machine learning, graph neural networks, healthcare analytics,
+      and explainable AI.
     </p>
   </section>
 
@@ -35,20 +40,69 @@
     <h2>Projects</h2>
 
     <div class="card">
-      <h3>Life Expectancy Forecasting</h3>
+      <h3>Discovering Unknown Side Effects of Multi-Drug Therapy</h3>
       <p>
-        Built regression and ensemble models (Linear, Ridge, Lasso, ElasticNet)
-        to forecast life expectancy across countries.
+        Designed a link prediction framework for drug–drug interaction graphs using
+        Node2Vec, Graph Convolutional Networks (GCNs), and Multi-Semantic Transmission
+        Embedding (MSTE). Achieved 80% prediction accuracy on heterogeneous biomedical graphs.
       </p>
+      <p><strong>Tech:</strong> Python, PyTorch Geometric</p>
+      <a href="https://github.com/santhean/Link-prediction" target="_blank">GitHub Repo</a>
     </div>
 
     <div class="card">
-      <h3>Drug–Drug Interaction Graph ML</h3>
+      <h3>Hybrid CNN–SVM vs Transfer Learning for Crop Pest Classification</h3>
       <p>
-        Constructed heterogeneous graphs and learned Node2Vec embeddings
-        for classification tasks.
+        Conducted a comparative study on small image datasets using CNN–SVM hybrids and
+        pretrained models (VGG16, ResNet50, EfficientNet). Addressed class imbalance
+        using data augmentation techniques.
       </p>
+      <p><strong>Tech:</strong> Python, PyTorch</p>
     </div>
+
+    <div class="card">
+      <h3>Local Map: Retrieval-Augmented Generation (RAG)</h3>
+      <p>
+        Built a RAG-based system using Reddit data to improve factual accuracy and
+        explainability of LLM-based local recommendations. Evaluated pipelines using
+        A/B testing and an LLM-based critic.
+      </p>
+      <p><strong>Tech:</strong> Python, Hugging Face, Streamlit, ChromaDB</p>
+      <a href="https://github.com/santhean/Veector_database_corpus" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="card">
+      <h3>Digit Classifier – AWS Cloud Deployment</h3>
+      <p>
+        Developed a cloud-based digit classification application using Django.
+        The trained machine learning model was stored in Amazon S3, and the
+        application was deployed on an AWS EC2 instance. Users can upload digit
+        images through the web interface for real-time inference.
+      </p>
+      <p><strong>Tech:</strong> Python, Django, AWS EC2, Amazon S3</p>
+    </div>
+
+    <div class="card">
+      <h3>Life Expectancy Prediction Using Regression Models</h3>
+      <p>
+        Analyzed country-level panel data to forecast life expectancy using
+        Multiple Linear Regression, Ridge, Lasso, and Elastic Net models.
+      </p>
+      <p><strong>Tech:</strong> Python, Pandas, Scikit-learn</p>
+      <a href="https://github.com/santhean/Life-Expectancy-prediction-country-wise" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="card">
+      <h3>Pac-Man Reinforcement Learning</h3>
+      <p>
+        Implemented Q-Learning, Approximate Q-Learning, and Deep Q-Learning (DQN)
+        to train an intelligent Pac-Man agent and evaluated performance across
+        multiple grid environments.
+      </p>
+      <p><strong>Tech:</strong> Python, PyTorch</p>
+      <a href="https://github.com/santhean/Pacman" target="_blank">GitHub Repo</a>
+    </div>
+
   </section>
 
   <!-- Experience -->
@@ -56,19 +110,23 @@
     <h2>Experience</h2>
 
     <div class="card">
-      <h3>Senior software engineer</h3>
-      <p><em>Light & Wonder Inc</em></p>
+      <h3>Research Assistant</h3>
+      <p><em>Lee’s Lab – Fox Chase Cancer Center, Temple University Hospital</em></p>
       <ul>
-        <li>Designed data piplines and managed multiple ETL tools, including SAP BODS, Cognos Data Manager (legacy), and
-SSIS, ensuring smooth data integration across systems</li>
-        <li>Developed SAP BODS jobs, including an SFTP-based ETL pipeline to extract Excel-based lottery files from
-third-party systems and load them into internal systems</li>
-        <li>Migrated Cognos BO reports to SAP BO WEBI, including complex solutions involving
-Live Office in Excel with WebI reports and dynamic updates via Power Query.</li>
-        <li>Optimized SQL query performance and improved ETL runtime by 40%, significantly enhancing processing effi-
-ciency.</li>
-        <li>Built Power BI and Incorta dashboards for team performance tracking, including ticket status monitoring and workload
-distribution.</li>
+        <li>Developed a Streamlit-based web application for real-time MST skin tone analysis.</li>
+        <li>Working on GAN/diffusion-based image synthesis pipelines to augment skin lesion datasets.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Advanced Software Engineer</h3>
+      <p><em>Light & Wonder, Chennai, India</em></p>
+      <ul>
+        <li>Owned enterprise ETL pipelines using SAP BODS, Cognos Data Manager, and SSIS.</li>
+        <li>Developed SFTP-based ETL pipelines for third-party data ingestion.</li>
+        <li>Migrated Cognos BO reports to SAP BO WebI with Live Office and Power Query.</li>
+        <li>Optimized SQL queries and ETL workflows, improving runtime by 40%.</li>
+        <li>Built Power BI and Incorta dashboards for analytics and performance tracking.</li>
       </ul>
     </div>
   </section>
@@ -77,17 +135,36 @@ distribution.</li>
   <section id="skills" class="section">
     <h2>Skills</h2>
     <ul class="skills-list">
-      <li>SQL </li>
-      <li>ETL scripting </li>
-      <li>Mapreduce programming</li>
-      <li> shell & bash scripting</li>
-      <li>Python programming</li>
-      <li>Machine Learning</li>
-      <li>Graph M & Graph SQLL</li><
+      <li>Python, SQL, SparkSQL</li>
+      <li>Machine Learning & Deep Learning</li>
+      <li>Graph Neural Networks (GCN, Node2Vec)</li>
+      <li>ETL & Data Warehousing</li>
+      <li>PyTorch, Scikit-learn</li>
+      <li>AWS (EC2, S3, Redshift), GCP, Azure</li>
+      <li>Power BI, Incorta, SAP BusinessObjects</li>
     </ul>
   </section>
 
-  
+  <!-- Volunteer -->
+  <section id="volunteer" class="section">
+    <h2>Volunteer Experience</h2>
+
+    <div class="card">
+      <h3>Philly Run Fest 2025</h3>
+      <p>
+        Volunteered at one of Philadelphia’s largest marathons, assisting with bib
+        distribution and providing refreshments to runners.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>AI Dev 25 x NYC</h3>
+      <p>
+        Volunteered at a major AI developer conference hosted by Prof. Andrew Ng
+        (DeepLearning.ai), supporting event operations and session logistics.
+      </p>
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="section">
@@ -103,6 +180,3 @@ distribution.</li>
   <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
